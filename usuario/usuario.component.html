@@ -1,0 +1,23 @@
+<div class="container">
+    REPORTE DE USUARIOS
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Usuario ID</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Nombre de usuario</th>
+                    <th scope="col">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let usuario of usuarios">
+                    <th scope="row">{{usuario.userId}}</th>
+                    <td>{{usuario.name}}</td>
+                    <td>{{usuario.username}}</td>
+                    <td>{{usuario.email}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

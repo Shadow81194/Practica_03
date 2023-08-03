@@ -1,0 +1,17 @@
+<table class="striped blue white-text">
+    <thead>
+      <tr>
+        <th>Monto</th>
+        <th>Nombre</th>
+        <th>RUC</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let gasto of gastos">
+        <td>{{ gasto.monto }}</td>
+        <td>{{ gasto.nombre }}</td>
+        <td>{{ gasto.ruc}}</td>
+      </tr>
+    </tbody>
+  </table>
+  
